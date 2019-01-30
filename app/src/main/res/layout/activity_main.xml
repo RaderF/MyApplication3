@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/checkBoxTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:checked="false"
+        android:text="Unsealed Spellbook"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxMiddle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Unsealed Spellbook" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:checked="false"
+        android:contentDescription="HasCosmicInsight"
+        android:text="Cosmic Insight"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTop"
+        tools:text="Cosmic Insight" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:contentDescription="HasIonianBoots"
+        android:text="Ionian Boots"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMiddle"
+        tools:text="Ionian Boots" />
+
+    <ImageButton
+        android:id="@+id/LeftSummSpell"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:contentDescription="ChosenSummonerSpell"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBottom"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/RightSummSpell"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:contentDescription="Chosen Summoner Spell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LeftSummSpell"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/LeftStopwatch"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="36dp"
+        android:text="SumSpell1 Used"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeftSummSpell"
+        tools:text="Start Timer 1" />
+
+    <Button
+        android:id="@+id/RightStopwatch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="SumSpell2 Used"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RightSummSpell"
+        tools:text="Start Timer 2" />
+
+    <EditText
+        android:id="@+id/LeftTimer"
+        android:layout_width="116dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="0:00"
+        android:inputType="time"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:text="5:00"
+        android:textSize="54sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeftStopwatch"
+        tools:text="5:00" />
+
+    <EditText
+        android:id="@+id/RightTimer"
+        android:layout_width="116dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="48dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="5:00"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RightStopwatch"
+        tools:text="5:00" />
+</android.support.constraint.ConstraintLayout>
