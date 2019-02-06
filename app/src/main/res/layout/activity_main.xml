@@ -6,22 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <CheckBox
-        android:id="@+id/checkBoxTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="16dp"
-        android:checked="false"
-        android:text="Unsealed Spellbook"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxMiddle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:text="Unsealed Spellbook" />
+
 
     <CheckBox
         android:id="@+id/checkBoxMiddle"
@@ -34,10 +19,11 @@
         android:checked="false"
         android:contentDescription="HasCosmicInsight"
         android:text="Cosmic Insight"
+        android:onClick="hasInsight"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBoxBottom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxTop"
+        app:layout_constraintTop_toBottomOf="parent"
         tools:text="Cosmic Insight" />
 
     <CheckBox
@@ -47,10 +33,12 @@
         android:layout_marginStart="150dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:checked="false"
         android:contentDescription="HasIonianBoots"
         android:text="Ionian Boots"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/RightSummSpell"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxMiddle"
         tools:text="Ionian Boots" />
@@ -74,15 +62,11 @@
         android:id="@+id/RightSummSpell"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="120dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:contentDescription="Chosen Summoner Spell"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LeftSummSpell"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxTop"
+        tools:layout_editor_absoluteY="192dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
