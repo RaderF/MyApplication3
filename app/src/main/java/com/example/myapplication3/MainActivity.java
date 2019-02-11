@@ -9,7 +9,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CountDownTimer;
+//import android.widget.CountDownTimer;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity  {
         spinner2.setAdapter(rightAdapter);
 
 
-        Button rightStartButton = (Button) findViewById(R.id.rightStopwatch);
-        CountDownTimer leftTimer = (CountDownTimer) findViewById(R.id.LeftTimer);
-        CountDownTimer rightTimer = (CountDownTimer) findViewById(R.id.RightTimer);
-        Button leftStartButton = (Button) findViewById(R.id.leftStopwatch);
+//        Button rightStartButton = (Button) findViewById(R.id.rightStopwatch);
+//        CountDownTimer leftTimer = (CountDownTimer) findViewById(R.id.LeftTimer);
+//        CountDownTimer rightTimer = (CountDownTimer) findViewById(R.id.RightTimer);
+//        Button leftStartButton = (Button) findViewById(R.id.leftStopwatch);
 
     }
 
