@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@id/rightSpell"
         tools:text="Start Timer 2" />
 
-    <EditText
+    <CountDownTimer
         android:id="@+id/LeftTimer"
         android:layout_width="116dp"
         android:layout_height="100dp"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.14"
         tools:text="5:00" />
 
-    <EditText
+    <CountDownTimer
         android:id="@+id/RightTimer"
         android:layout_width="116dp"
         android:layout_height="100dp"

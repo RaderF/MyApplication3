@@ -7,6 +7,9 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CountDownTimer;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -27,5 +30,14 @@ public class MainActivity extends AppCompatActivity  {
                 R.array.spells_array, android.R.layout.simple_spinner_item);
         leftAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(rightAdapter);
+
+
+        Button rightStartButton = (Button) findViewById(R.id.rightStopwatch);
+        CountDownTimer leftTimer = (CountDownTimer) findViewById(R.id.LeftTimer);
+        CountDownTimer rightTimer = (CountDownTimer) findViewById(R.id.RightTimer);
+        Button leftStartButton = (Button) findViewById(R.id.leftStopwatch);
+
     }
+
+
 }
