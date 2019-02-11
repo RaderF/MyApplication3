@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">My Application3</string>
+    <?xml version="1.0" encoding="utf-8"?>
+        <string-array name="spells_array">
+            <item>Flash</item>
+            <item>Teleport</item>
+            <item>Heal</item>
+            <item>Ignite</item>
+            <item>Barrier</item>
+            <item>Cleanse</item>
+            <item>Exhaust</item>
+            <item>Ghost</item>
+        </string-array>
 </resources>
